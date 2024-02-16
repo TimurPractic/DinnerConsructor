@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 public class DinnerConstructor {
-    HashMap<String, ArrayList> typeToDishes = new HashMap<>();
+    HashMap<String, ArrayList<String>> typeToDishes = new HashMap<>();
     Random random = new Random();
 
     public void addDish(String dishType, String dishName){

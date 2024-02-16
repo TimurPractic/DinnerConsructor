@@ -60,11 +60,10 @@ public class Main {
         while (!nextItem.isEmpty()) {
             if (dc.typeToDishes.containsKey(nextItem.toUpperCase())){
                 comboStructure.add(nextItem.toUpperCase());
-                nextItem = scanner.nextLine();
             } else {
                 System.out.println("Такого типа нет в меню, попробуйте ещё раз.");
-                nextItem = scanner.nextLine();
             }
+            nextItem = scanner.nextLine();
         }
         ArrayList<ArrayList<String>> combos = dc.generateCombos(numberOfCombos, comboStructure);
 
